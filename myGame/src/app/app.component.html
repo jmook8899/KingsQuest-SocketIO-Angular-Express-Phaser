@@ -1,0 +1,10 @@
+<div>
+  <p id="logo">KingsQuest</p>
+  <p id="lol">Enter user name:</p>
+  <form (submit)="onSubmit()">
+    <input id="username" type="text" minlength="1" maxlength="15" name="name" [(ngModel)]="player.name">
+    <button type="submit" class="btn btn-success">Play!</button>
+  </form>
+</div>
+
+<router-outlet></router-outlet>
